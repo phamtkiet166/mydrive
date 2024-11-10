@@ -1,93 +1,119 @@
-/* styles.css */
-
-/* Reset một số kiểu mặc định */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Màu nền nhẹ */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('bk.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
 }
 
-/* Styles cho header */
 .header {
-    background-color: #4285F4; /* Màu xanh của Google */
-    padding: 20px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #000080; /* Xanh nước biển */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Logo */
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-/* Styles cho navbar */
 .navbar {
-    display: flex;
+  display: flex;
 }
 
 .nav-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
+  color: white;
+  text-decoration: none;
 }
 
-.nav-links a:hover {
-    color: #ddd; /* Màu chữ khi hover */
+.container {
+  display: flex;
+  margin-top: 20px; /* Thêm khoảng cách trên */
 }
 
-/* Styles cho main */
+.sidebar {
+  width: 200px;
+  background-color: #1a1a1a;
+  padding: 20px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin: 15px 0;
+}
+
+.sidebar-menu a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.sidebar-menu a:hover, .sidebar-menu a.active {
+  background: #00bfff; /* Màu khi hover hoặc chọn */
+  padding: 10px; /* Thêm khoảng cách cho hiệu ứng hover */
+}
+
 main {
-    text-align: center;
-    padding: 50px;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.banner {
+  text-align: center;
+  margin-bottom: 20px; /* Khoảng cách dưới banner */
+}
+
+.banner-image {
+  max-width: 100%; /* Hình ảnh linh hoạt */
+  height: auto;
+  border-radius: 10px; /* Bo góc hình ảnh */
+}
+
+.info-box {
+  background: rgba(0, 0, 0, 0.7); /* Nền mờ */
+  padding: 20px;
+  border-radius: 10px; /* Bo góc */
+  margin-bottom: 20px; /* Khoảng cách dưới */
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .search-bar {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 300px; /* Chiều rộng ô tìm kiếm */
+  padding: 10px;
+  flex-grow: 1;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
 }
 
-/* Styles cho upload form */
-.upload-form {
-    margin: 20px 0;
-}
-
-/* Styles cho danh sách tệp */
-#fileList {
-    list-style: none;
-    padding: 0;
-}
-
-#fileList li {
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin: 5px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Styles cho footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1; /* Màu nền nhẹ cho footer */
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: #000080;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
