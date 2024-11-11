@@ -1,119 +1,322 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: url('bk.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
-.header {
-  background-color: #000080; /* Xanh nước biển */
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Main Content Styling */
+.main-content {
+    background-color: #e0e0e0; /* Light gray background */
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
+.main-content .container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+h1 {
+    font-size: 36px;
+    color: #333; /* Dark text for contrast */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #555; /* Slightly darker gray */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-btn {
+    background-color: #007bb5; /* Blue color */
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #005f8a; /* Darker blue on hover */
+}
+
+.cta-btn:active {
+    background-color: #004f6a;
+}
+
+/* Navbar styling */
 .navbar {
-  display: flex;
+    background-color: #333; /* Dark gray navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
 }
 
 .nav-links li {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
-.container {
-  display: flex;
-  margin-top: 20px; /* Thêm khoảng cách trên */
+.nav-links li a:hover {
+    color: #007bb5; /* Blue on hover */
 }
 
-.sidebar {
-  width: 200px;
-  background-color: #1a1a1a;
-  padding: 20px;
+/* User Dashboard Styling */
+.user-dashboard {
+    background-color: #f4f4f4; /* Lighter gray background */
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.sidebar-menu {
-  list-style: none;
-  padding: 0;
+.user-dashboard .container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.sidebar-menu li {
-  margin: 15px 0;
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.sidebar-menu a {
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  transition: background 0.3s; /* Hiệu ứng chuyển màu */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left;
 }
 
-.sidebar-menu a:hover, .sidebar-menu a.active {
-  background: #00bfff; /* Màu khi hover hoặc chọn */
-  padding: 10px; /* Thêm khoảng cách cho hiệu ứng hover */
+.dashboard-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-main {
-  flex-grow: 1;
-  padding: 20px;
+.account-info, .file-management, .share-files, .account-settings {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: left;
 }
 
-.banner {
-  text-align: center;
-  margin-bottom: 20px; /* Khoảng cách dưới banner */
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
 }
 
-.banner-image {
-  max-width: 100%; /* Hình ảnh linh hoạt */
-  height: auto;
-  border-radius: 10px; /* Bo góc hình ảnh */
+.file-actions, .account-settings button {
+    margin-top: 20px;
 }
 
-.info-box {
-  background: rgba(0, 0, 0, 0.7); /* Nền mờ */
-  padding: 20px;
-  border-radius: 10px; /* Bo góc */
-  margin-bottom: 20px; /* Khoảng cách dưới */
+.btn {
+    background-color: #007bb5; /* Blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-.search-container {
-  display: flex;
-  margin-bottom: 20px;
+.btn:hover {
+    background-color: #005f8a; /* Darker blue on hover */
 }
 
-.search-bar {
-  padding: 10px;
-  flex-grow: 1;
-  margin-right: 10px;
-  border: none;
-  border-radius: 5px;
+.btn:active {
+    background-color: #004f6a;
 }
 
-footer {
-  background-color: #000080;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+/* Footer Styling */
+.footer {
+    background-color: #333; /* Dark gray footer */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #007bb5; /* Blue on hover */
+}
+
+.footer-links a:active {
+    color: #005f8a;
+}
+
+p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* File Search Styling */
+.file-search {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.search-box {
+    width: 50%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-box:focus {
+    border-color: #007bb5; /* Blue border on focus */
+}
+
+/* User Notifications Styling */
+.user-notifications {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+.notification {
+    background-color: #fff;
+    border-left: 5px solid #007bb5; /* Blue left border */
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.notification p {
+    margin: 0;
+}
+
+.notification strong {
+    color: #007bb5; /* Blue strong text */
+}
+
+/* Bulk Download Styling */
+.bulk-download {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+}
+
+.file-list {
+    margin-bottom: 20px;
+}
+
+.file-list input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.bulk-download .btn {
+    background-color: #007bb5; /* Blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bulk-download .btn:hover {
+    background-color: #005f8a; /* Darker blue on hover */
+}
+
+/* Data Sync Styling */
+.data-sync {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+}
+
+.data-sync .btn {
+    background-color: #007bb5; /* Blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.data-sync .btn:hover {
+    background-color: #005f8a; /* Darker blue on hover */
 }
