@@ -9,6 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
 /* Main Content Styling */
@@ -23,25 +24,28 @@ body {
     margin: 0 auto;
 }
 
+h1, h2 {
+    color: #333; /* Dark text for contrast */
+}
+
 h1 {
     font-size: 36px;
-    color: #333; /* Dark text for contrast */
     margin-bottom: 20px;
 }
 
 p {
     font-size: 18px;
-    color: #555; /* Slightly darker gray */
+    color: #555;
     margin-bottom: 20px;
 }
 
 h2 {
     font-size: 28px;
-    color: #333;
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
+/* List styles */
 ul {
     list-style: none;
     padding: 0;
@@ -54,6 +58,7 @@ ul li {
     margin-bottom: 10px;
 }
 
+/* Call-to-action buttons */
 .cta-buttons {
     display: flex;
     justify-content: center;
@@ -116,7 +121,7 @@ ul li {
 
 /* User Dashboard Styling */
 .user-dashboard {
-    background-color: #f4f4f4; /* Lighter gray background */
+    background-color: #f4f4f4;
     padding: 50px 20px;
     text-align: center;
 }
@@ -124,19 +129,6 @@ ul li {
 .user-dashboard .container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-h1 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 15px;
-    text-align: left;
 }
 
 .dashboard-info {
@@ -155,16 +147,7 @@ h2 {
     text-align: left;
 }
 
-p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.file-actions, .account-settings button {
-    margin-top: 20px;
-}
-
+/* Button styles */
 .btn {
     background-color: #007bb5; /* Blue color */
     color: white;
@@ -194,15 +177,6 @@ p {
     text-align: center;
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-links {
-    margin-bottom: 10px;
-}
-
 .footer-links a {
     color: #fff;
     text-decoration: none;
@@ -213,15 +187,6 @@ p {
 
 .footer-links a:hover {
     color: #007bb5; /* Blue on hover */
-}
-
-.footer-links a:active {
-    color: #005f8a;
-}
-
-p {
-    font-size: 14px;
-    color: #bbb;
 }
 
 /* File Search Styling */
@@ -245,60 +210,6 @@ p {
     border-color: #007bb5; /* Blue border on focus */
 }
 
-/* User Notifications Styling */
-.user-notifications {
-    padding: 20px;
-    background-color: #f9f9f9;
-    margin-top: 20px;
-}
-
-.notification {
-    background-color: #fff;
-    border-left: 5px solid #007bb5; /* Blue left border */
-    padding: 10px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    color: #333;
-}
-
-.notification p {
-    margin: 0;
-}
-
-.notification strong {
-    color: #007bb5; /* Blue strong text */
-}
-
-/* Bulk Download Styling */
-.bulk-download {
-    background-color: #f9f9f9;
-    padding: 30px;
-    text-align: center;
-}
-
-.file-list {
-    margin-bottom: 20px;
-}
-
-.file-list input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.bulk-download .btn {
-    background-color: #007bb5; /* Blue color */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.bulk-download .btn:hover {
-    background-color: #005f8a; /* Darker blue on hover */
-}
-
 /* Data Sync Styling */
 .data-sync {
     background-color: #f9f9f9;
@@ -307,7 +218,7 @@ p {
 }
 
 .data-sync .btn {
-    background-color: #007bb5; /* Blue color */
+    background-color: #007bb5;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -318,5 +229,5 @@ p {
 }
 
 .data-sync .btn:hover {
-    background-color: #005f8a; /* Darker blue on hover */
+    background-color: #005f8a;
 }
