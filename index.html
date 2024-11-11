@@ -1,58 +1,123 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyDrive - Dịch Vụ Lưu Trữ Trực Tuyến</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Online Storage Website</title>
+    <link rel="stylesheet" href="maincontent.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">MyDrive</div>
+    <!-- Main Content Area -->
+    <header>
         <nav class="navbar">
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#" id="uploadBtn">uploat</a></li>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">về chúng tôi</a></li>
+                <li><a href="#">liên kết </a></li>
+                <li><a href="#">đăng nhập </a></li>
+                <li><a href="#">đăng kí </a></li>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <aside class="sidebar">
-            <ul class="sidebar-menu">
-                <li><a href="#" class="active"><i class="fas fa-home"></i> Trang Chủ</a></li>
-                <li><a href="#"><i class="fas fa-clock"></i> Gần Đây</a></li>
-                <li><a href="#"><i class="fas fa-trash"></i> Thùng Rác</a></li>
+    <section class="main-content">
+        <div class="container">
+            <h1>Xin chào everybody đã quay trở lại với mydrive </h1>
+            <p>lưu trữ, đề cập, chia sẻ , dịch vụ tốt nhất trảng bom.</p>
+            
+            <h2>các chức năg chính của dịch vụ chúng tôi </h2>
+            <ul>
+                <li>cho phép tài liệu của bạn mọi nơi </li>
+                <li>tự động chia sẻ trên mọi thiết bị 😊</li>
+                <li>bảo mật dữ liệu an toàn tuyệt đối 😍.</li>
+                <li>cuộc sống dẽ dàng hơn , làm việc dễ hơn </li>
             </ul>
-        </aside>
-        <main>
-            <div class="banner">
-                <img src="tna.jpg" alt="Banner" class="banner-image">
+            
+            <h2>Hãy bắt đầu nào </h2>
+            <p>Đăng kí ngay để bắt đầu với dịch vụ chúng tôi </p>
+            
+            <div class="cta-buttons">
+                <a href="#" class="cta-btn">Sign Up</a>
+                <a href="#" class="cta-btn">Download App</a>
             </div>
-            <h1>Chào Mừng đến với 11a6</h1>
-            <div class="info-box">
-                <p>Chúng tôi cung cấp dịch vụ lưu trữ trực tuyến an toàn và đáng tin cậy. Tải lên, quản lý và chia sẻ tệp của bạn dễ dàng và nhanh chóng.</p>
+        </div>
+    </section>
+    <section class="user-dashboard">
+        <div class="container">
+            <h1>Welcome,đã quay trở lại tkiet </h1>
+            <div class="dashboard-info">
+                <div class="account-info">
+                    <h2>thông tin tài khoản </h2>
+                    <p><strong>dung lượng đã sài </strong> 15GB of 50GB</p>
+                    <p><strong>Email:</strong> user@example.com</p>
+                    <p><strong>Subscription Plan:</strong> Premium</p>
+                </div>
+                
+                <div class="file-management">
+                    <h2>quản lí tệp </h2>
+                    <div class="file-actions">
+                        <button class="btn">Upload File</button>
+                        <button class="btn">Create Folder</button>
+                        <button class="btn">View Files</button>
+                    </div>
+                </div>
+
+                <div class="share-files">
+                    <h2>chia sẻ file </h2>
+                    <button class="btn">Share a File</button>
+                </div>
+
+                <div class="account-settings">
+                    <h2>cài đặt tài khoản </h2>
+                    <button class="btn">đổi mk </button>
+                    <button class="btn">Enable Two-Factor Authentication</button>
+                </div>
             </div>
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Tìm kiếm tệp..." class="search-bar">
-                <select id="fileTypeFilter">
-                    <option value="all">Tất cả</option>
-                    <option value="pdf">PDF</option>
-                    <option value="jpg">Hình ảnh</option>
-                    <option value="mp4">Video</option>
-                </select>
+        </div>
+    </section>
+
+    <section class="file-search">
+        <div class="container">
+            <input type="text" class="search-box" placeholder="Search your files..." id="searchInput">
+        </div>
+    </section>
+    <section class="user-notifications">
+        <div class="notification">
+            <p><strong>New File Uploaded</strong> Your file "Report.pdf" has been uploaded successfully.</p>
+        </div>
+        <div class="notification">
+            <p><strong>Storage Alert</strong> You are using 90% of your storage limit.</p>
+        </div>
+    </section>
+    <section class="bulk-download">
+        <div class="container">
+            <h2>chọn file để tải xuống </h2>
+            <div class="file-list">
+                <input type="checkbox" id="file1"> <label for="file1">File 1.pdf</label><br>
+                <input type="checkbox" id="file2"> <label for="file2">File 2.jpg</label><br>
+                <input type="checkbox" id="file3"> <label for="file3">File 3.txt</label><br>
+                <button class="btn">tải file đã chọn </button>
             </div>
-            <div class="upload-form" id="uploadForm" style="display:none;">
-                <input type="file" id="fileInput" multiple>
-                <button id="submitBtn">Tải lên</button>
+        </div>
+    </section>
+    <section class="data-sync">
+        <div class="container">
+            <h2>bắt đàu đồng bộ hóa dữ liệu </h2>
+            <button class="btn">Start Sync</button>
+            <p>Your files will be synced across all your devices.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support</a>
             </div>
-            <h2>Danh Sách Tệp</h2>
-            <ul id="fileList"></ul>
-        </main>
-    </div>
-    <footer>
-        <p>&copy; 2024 MyDrive. All rights reserved.</p>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
     </footer>
-    ##<scri#pt src="scr#ipts.js"></scr#ipt>
 </body>
 </html>
