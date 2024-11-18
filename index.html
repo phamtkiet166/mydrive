@@ -4,117 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Storage Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="maincontent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* CSS inline để ảnh nền phủ toàn bộ trang */
+        body {
+            background-image: url('/github/hh.png'); /* Đường dẫn đến ảnh nền */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .logo a {
+            font-size: 40px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 80px; /* Kích thước của logo */
+            margin-right: 20px;
+            border-radius: 50%; 
+        }
+    </style>
 </head>
 <body>
-    <!-- Main Content Area -->
+    <!-- Header -->
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="#">Logo</a>
+                <a href="#"><img src="logo.jpg" alt="Logo">Mydrive</a> <!-- Đường dẫn đến logo -->
             </div>
             <ul class="nav-links">
-                <li><a href="#">Trang Chủ</a></li>
-                <li><a href="#">về chúng tôi</a></li>
-                <li><a href="#">liên kết </a></li>
-                <li><a href="#">đăng nhập </a></li>
-                <li><a href="#">đăng kí </a></li>
+                <li><a href="#"><i class="fas fa-home"></i> Trang Chủ</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> Về Chúng Tôi</a></li>
+                <li><a href="#"><i class="fas fa-link"></i> Liên Kết</a></li>
+                <li><a href="#"><i class="fas fa-sign-in-alt"></i> Đăng Nhập</a></li>
+                <li><a href="#"><i class="fas fa-user-plus"></i> Đăng Ký</a></li>
             </ul>
         </nav>
     </header>
-    <section class="main-content">
-        <div class="container">
-            <h1>Xin chào everybody đã quay trở lại với mydrive </h1>
-            <p>lưu trữ, đề cập, chia sẻ , dịch vụ tốt nhất trảng bom.</p>
-            
-            <h2>các chức năg chính của dịch vụ chúng tôi </h2>
+
+    <!-- Main Layout -->
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
             <ul>
-                <li>cho phép tài liệu của bạn mọi nơi </li>
-                <li>tự động chia sẻ trên mọi thiết bị 😊</li>
-                <li>bảo mật dữ liệu an toàn tuyệt đối 😍.</li>
-                <li>cuộc sống dẽ dàng hơn , làm việc dễ hơn </li>
+                <li><a href="#"><i class="fas fa-folder-plus"></i> Tạo Thư Mục</a></li>
+                <li><a href="#"><i class="fas fa-file-upload"></i> Tải Lên</a></li>
+                <li><a href="#"><i class="fas fa-folder-open"></i> Xem Tệp</a></li>
+                <li><a href="#"><i class="fas fa-share-alt"></i> Chia Sẻ</a></li>
+                <li><a href="#"><i class="fas fa-trash"></i> Xóa</a></li>
+                <li><a href="#"><i class="fas fa-cogs"></i> Cài Đặt</a></li>
             </ul>
-            
-            <h2>Hãy bắt đầu nào </h2>
-            <p>Đăng kí ngay để bắt đầu với dịch vụ chúng tôi </p>
-            
-            <div class="cta-buttons">
-                <a href="#" class="cta-btn">Sign Up</a>
-                <a href="#" class="cta-btn">Download App</a>
-            </div>
-        </div>
-    </section>
-    <section class="user-dashboard">
-        <div class="container">
-            <h1>Welcome,đã quay trở lại tkiet </h1>
-            <div class="dashboard-info">
-                <div class="account-info">
-                    <h2>thông tin tài khoản </h2>
-                    <p><strong>dung lượng đã sài </strong> 15GB of 50GB</p>
-                    <p><strong>Email:</strong> user@example.com</p>
-                    <p><strong>Subscription Plan:</strong> Premium</p>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Section: Welcome -->
+            <section class="container">
+              <h1><span style="color: rgb(0, 200, 255);">Xin chào everybody đã quay trở lại với MyDrive</span></h1>
+              <p>MyDrive là nền tảng lưu trữ đám mây hiện đại, giúp bạn dễ dàng lưu trữ, quản lý và chia sẻ tài liệu mọi lúc, mọi nơi. Với giao diện thân thiện và dễ sử dụng, MyDrive mang đến cho bạn không gian lưu trữ an toàn, bảo mật với tốc độ tải lên và tải xuống nhanh chóng. Dù bạn đang làm việc, học tập hay chia sẻ những khoảnh khắc đáng nhớ, MyDrive sẽ luôn là người bạn đồng hành đáng tin cậy. Chúng tôi cam kết bảo vệ dữ liệu của bạn với công nghệ mã hóa tiên tiến, đồng thời cung cấp các tính năng như đồng bộ hóa tự động và chia sẻ liên kết nhanh chóng. Khám phá MyDrive ngay hôm nay và nâng cao trải nghiệm lưu trữ trực tuyến của bạn!</p>
+              <h1><span style="color: rgb(0, 200, 255);">Các Chức Năng Chính của dịch vụ tôt nhất ở trảng bom  </span></h1>
+                <ul>
+                    <li>Chống Hacker .</li>
+                    <li>Tự động chia sẻ trên mọi thiết bị 😊.</li>
+                    <li>Bảo mật dữ liệu an toàn tuyệt đối 😍.</li>
+                    <li>Cuộc sống dễ dàng hơn, làm việc dễ hơn.</li>
+                </ul>
+                <h1><span style="color: rgb(0, 200, 255);">bắt đầu ?</span></h1>
+                <p>Đăng ký ngay để bắt đầu với dịch vụ của chúng tôi.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="cta-btn">Sign Up</a>
+                    <a href="#" class="cta-btn">Download App</a>
                 </div>
-                
-                <div class="file-management">
-                    <h2>quản lí tệp </h2>
-                    <div class="file-actions">
-                        <button class="btn">Upload File</button>
-                        <button class="btn">Create Folder</button>
-                        <button class="btn">View Files</button>
+            </section>
+
+            <!-- Section: Dashboard -->
+            <section class="user-dashboard">
+                <div class="container">
+                    <h1><span style="color: rgb(0, 200, 255);">Khu vực thông tin người dùng </span></h1>
+                    <h4>Welcome, đã quay trở lại Tkiet</h4>
+                    <div class="dashboard-info">
+                        <div class="account-info">
+                            <h4>Thông tin tài khoản:</h4>
+                            <p><strong>Dung lượng đã sử dụng:</strong> 15GB of 50GB</p>
+                            <p><strong>Email:</strong> tk166@gmail.com</p>
+                            <p><strong>chế dộ:</strong> Premium</p>
+                        </div>
+                        <div class="file-management">
+                            <h2>-----------------------------------------------------Quản lý tệp--------------------------------------------------------------------------</h2>
+                            <div class="file-actions">
+                                <p><button class="btn"><i class="fas fa-file-upload"></i> Upload File</button></p>
+                                <p><button class="btn"><i class="fas fa-folder-plus"></i> Create Folder</button></p>
+                                <p><button class="btn"><i class="fas fa-folder-open"></i> View Files</button></p>
+                            </div>
+                        </div>
+                        <div class="share-files">
+                           
+                            <button class="btn"><i class="fas fa-share-alt"></i> Share a File</button>
+                        </div>
+                        <div class="account-settings">
+                            <h2>Cài đặt tài khoản</h2>
+                            <button class="btn"><i class="fas fa-key"></i> Đổi mật khẩu</button>
+                            <button class="btn"><i class="fas fa-shield-alt"></i> tắt xác minh 2 bước</button>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="share-files">
-                    <h2>chia sẻ file </h2>
-                    <button class="btn">Share a File</button>
+            <!-- Section: Search Files -->
+            <section class="file-search">
+                <div class="container">
+                    <input type="text" class="search-box" placeholder="Search your files..." id="searchInput">
                 </div>
+            </section>
 
-                <div class="account-settings">
-                    <h2>cài đặt tài khoản </h2>
-                    <button class="btn">đổi mk </button>
-                    <button class="btn">Enable Two-Factor Authentication</button>
+            <!-- Section: Notifications -->
+            <section class="user-notifications">
+                <div class="notification">
+                    <p><strong>file mới đã được thêm:</strong> file  "Report.pdf" đã được tải thành công.</p>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="notification">
+                    <p><strong>Dung lượng:</strong>bạn đã sử dụng vượt quá 90% dung lượng.</p>
+                </div>
+            </section>
 
-    <section class="file-search">
-        <div class="container">
-            <input type="text" class="search-box" placeholder="Search your files..." id="searchInput">
-        </div>
-    </section>
-    <section class="user-notifications">
-        <div class="notification">
-            <p><strong>New File Uploaded</strong> Your file "Report.pdf" has been uploaded successfully.</p>
-        </div>
-        <div class="notification">
-            <p><strong>Storage Alert</strong> You are using 90% of your storage limit.</p>
-        </div>
-    </section>
-    <section class="bulk-download">
-        <div class="container">
-            <h2>chọn file để tải xuống </h2>
-            <div class="file-list">
-                <input type="checkbox" id="file1"> <label for="file1">File 1.pdf</label><br>
-                <input type="checkbox" id="file2"> <label for="file2">File 2.jpg</label><br>
-                <input type="checkbox" id="file3"> <label for="file3">File 3.txt</label><br>
-                <button class="btn">tải file đã chọn </button>
-            </div>
-        </div>
-    </section>
-    <section class="data-sync">
-        <div class="container">
-            <h2>bắt đàu đồng bộ hóa dữ liệu </h2>
-            <button class="btn">Start Sync</button>
-            <p>Your files will be synced across all your devices.</p>
-        </div>
-    </section>
+            <!-- Section: Bulk Download -->
+            <section class="bulk-download">
+                <div class="container">
+                    <h2>Chọn file để tải xuống</h2>
+                    <div class="file-list">
+                        <input type="checkbox" id="file1"> <label for="file1">File 1.pdf</label><br>
+                        <input type="checkbox" id="file2"> <label for="file2">File 2.jpg</label><br>
+                        <input type="checkbox" id="file3"> <label for="file3">File 3.txt</label><br>
+                        <button class="btn"><i class="fas fa-download"></i> Tải file đã chọn</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Data Sync -->
+            <section class="data-sync">
+                <div class="container">
+                    <h2>Bắt đầu đồng bộ hóa dữ liệu</h2>
+                    <button class="btn"><i class="fas fa-sync-alt"></i> Start Sync</button>
+                    <p>Your files will be synced across all your devices.</p>
+                </div>
+            </section>
+            <!-- Section: Founders -->
+<section class="founders">
+  <div class="container">
+      <h2>Đồng Sáng Lập</h2>
+      <p>Chúng tôi là group nine , we will sun shine,chúng tôi đam mê mang đến giải pháp lưu trữ trực tuyến tốt nhất cho bạn , và mydrive chính là nó hehehe</p>
+      <div class="founder-list">
+          <div class="founder">
+              <img src="liem.jpg" alt="Founder 1">
+              <h3>Phùng Thanh Liêm </h3>
+              <p>Chuyên gia công nghệ, sáng lập và phát triển nền tảng MyDrive.</p>
+          </div>
+          <div class="founder">
+              <img src="kiet.jpg" alt="Founder 2">
+              <h3>Phạm Tuấn Kiệt</h3>
+              <p>cha đẻ của mydrive,người đứng đầu về các tính năng bảo mật của MyDrive.</p>
+          </div>
+          <div class="founder">
+              <img src="long.jpg" alt="Founder 3">
+              <h3>Trần Sơn Long</h3>
+              <p>Chuyên gia quản lý dự án, định hướng chiến lược phát triển dài hạn của MyDrive.</p>
+          </div>
+      </div>
+  </div>
+</section>  
+        </main>
+    </div>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Support</a>
+                <a href="#"><i class="fas fa-lock"></i> Privacy Policy</a>
+                <a href="#"><i class="fas fa-file-alt"></i> Terms of Service</a>
+                <a href="#"><i class="fas fa-headset"></i> Support</a>
             </div>
             <p>&copy; 2024 Your Company. All rights reserved.</p>
         </div>
